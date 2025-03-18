@@ -92,6 +92,25 @@ body {
     justify-content: center;
 }
 
+.button-reset {
+    
+    margin: 10px;
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    margin-left: 70px
+}
+
+.button-reset:hover {
+    background-color: #d32f2f; 
+}
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;

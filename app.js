@@ -7,8 +7,7 @@ function validarNombre(nombre) {
         return "Por favor, ingresa un nombre válido.";
     }
     
-    
-    const regex = /^[A-Za-z\s]+$/;  
+        const regex = /^[A-Za-z\s]+$/;  
     if (!regex.test(nombre)) {
         return "El nombre solo debe contener letras y espacios.";
     }
@@ -22,8 +21,7 @@ function validarNombre(nombre) {
     }
         return null;
 
-    
-}
+    }
 
 function agregarAmigo() {
        
@@ -72,3 +70,12 @@ function sortearAmigo() {
         sorteado = true;
 
        }
+
+       function reiniciarJuego() {
+        amigos = [];
+        sorteado = false;
+        document.getElementById('listaAmigos').innerHTML = "";
+        document.getElementById('resultado').innerHTML = "";
+        document.getElementById('amigo').value = "";
+        alert("El juego ha sido reiniciado.");
+    }
